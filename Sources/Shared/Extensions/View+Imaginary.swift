@@ -8,12 +8,10 @@ extension View {
   ///   - completion: Called after done
   public func setImage(url: URL,
                        completion: Completion? = nil) {
-    let option: Option = Option()
-
     cancelImageFetch()
 
     self.imageFetcher = ImageFetcher(
-      downloader: option.downloaderMaker()
+      downloader: ImageDownloader(modifyRequest: { $0 })
     )
 
     self.imageFetcher?.fetch(url: url, completion: { [weak self] result in
@@ -22,7 +20,7 @@ extension View {
       }
 
       self.handle(url: url, result: result,
-                  option: option, completion: completion)
+                  completion: completion)
     })
   }
 
@@ -35,7 +33,8 @@ extension View {
   }
 
   private func handle(url: URL, result: Result,
-                      option: Option, completion: Completion?) {
+                      completion: Completion?) {
+    let option: Option = Option()
 
     defer {
       DispatchQueue.main.async {
