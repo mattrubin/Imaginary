@@ -51,7 +51,7 @@ extension View {
 
     switch result {
     case .value(let image):
-      let processedImage = option.imagePreprocessor?.process(image: image) ?? image
+      let processedImage = image
       DispatchQueue.main.async {
         option.imageDisplayer.display(image: processedImage, onto: self)
       }

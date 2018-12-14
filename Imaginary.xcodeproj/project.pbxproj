@@ -24,7 +24,6 @@
 		D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8111F7252C300D2B8EF /* Result.swift */; };
 		D2E8C8251F7252C300D2B8EF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8121F7252C300D2B8EF /* Types.swift */; };
 		D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */; };
-		D2E8C8361F7257A800D2B8EF /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		D2E8C8111F7252C300D2B8EF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D2E8C8121F7252C300D2B8EF /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDisplayer.swift; sourceTree = "<group>"; };
-		D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		D5DF75911C403D8200BF1AB6 /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF759E1C403E1000BF1AB6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */,
-				D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */,
 				D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */,
 				D2E8C8101F7252C300D2B8EF /* Option.swift */,
 				D2E8C8111F7252C300D2B8EF /* Result.swift */,
@@ -331,7 +328,6 @@
 				D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */,
 				D2E8C8211F7252C300D2B8EF /* Option.swift in Sources */,
 				D2E8C8251F7252C300D2B8EF /* Types.swift in Sources */,
-				D2E8C8361F7257A800D2B8EF /* ImageProcessor.swift in Sources */,
 				D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */,
 				D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */,
 				D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */,
