@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDE8FBF61D1BFC8D00C5A212 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE8FBF51D1BFC8D00C5A212 /* Cache.framework */; };
 		D21352B51F7523BF00B5375B /* View+Imaginary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B41F7523BF00B5375B /* View+Imaginary.swift */; };
 		D21352B61F7523BF00B5375B /* View+Imaginary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B41F7523BF00B5375B /* View+Imaginary.swift */; };
 		D21352B81F75266200B5375B /* ButtonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B71F75266200B5375B /* ButtonDisplayer.swift */; };
@@ -29,7 +28,6 @@
 		D21352E61F75410100B5375B /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */; };
 		D21352E71F75410100B5375B /* MultipleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80C1F7252C300D2B8EF /* MultipleImageFetcher.swift */; };
 		D21352E81F75410300B5375B /* View+Imaginary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B41F7523BF00B5375B /* View+Imaginary.swift */; };
-		D21352EA1F7541D300B5375B /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21352E91F7541D300B5375B /* Cache.framework */; };
 		D21352FB1F75427000B5375B /* ImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E2E9821F7112CF001B4251 /* ImageFetcherTests.swift */; };
 		D21352FC1F75427000B5375B /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273453B1F7148C100BF063D /* TestHelper.swift */; };
 		D21352FD1F75427000B5375B /* MultipleImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27345401F71619800BF063D /* MultipleImageFetcherTests.swift */; };
@@ -37,10 +35,8 @@
 		D21352FF1F75427000B5375B /* ImageView+ImaginaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1CC1F726F15001963ED /* ImageView+ImaginaryTests.swift */; };
 		D21353001F75427000B5375B /* Button+ImaginaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352BB1F7527F700B5375B /* Button+ImaginaryTests.swift */; };
 		D21353011F75429B00B5375B /* Imaginary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21352C21F7540E400B5375B /* Imaginary.framework */; };
-		D21353021F7542C800B5375B /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21352E91F7541D300B5375B /* Cache.framework */; };
 		D273452B1F71448000BF063D /* Decompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273451B1F71448000BF063D /* Decompressor.swift */; };
 		D27345381F71448900BF063D /* Decompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27345201F71448000BF063D /* Decompressor.swift */; };
-		D273453A1F7147BE00BF063D /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF75B11C403FBF00BF1AB6 /* Cache.framework */; };
 		D273453C1F7148C100BF063D /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273453B1F7148C100BF063D /* TestHelper.swift */; };
 		D27345411F71619800BF063D /* MultipleImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27345401F71619800BF063D /* MultipleImageFetcherTests.swift */; };
 		D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */; };
@@ -70,7 +66,6 @@
 		D2E8C8351F7257A800D2B8EF /* ImageDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */; };
 		D2E8C8361F7257A800D2B8EF /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */; };
 		D2E8C8371F7257A800D2B8EF /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */; };
-		D5DF75B21C403FBF00BF1AB6 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF75B11C403FBF00BF1AB6 /* Cache.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,13 +88,11 @@
 /* Begin PBXFileReference section */
 		BDE8FBE91D1BFB9F00C5A212 /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE8FBF41D1BFC7C00C5A212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDE8FBF51D1BFC8D00C5A212 /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cache.framework; path = Carthage/Build/Mac/Cache.framework; sourceTree = "<group>"; };
 		D21352B41F7523BF00B5375B /* View+Imaginary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Imaginary.swift"; sourceTree = "<group>"; };
 		D21352B71F75266200B5375B /* ButtonDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisplayer.swift; sourceTree = "<group>"; };
 		D21352B91F75266C00B5375B /* ButtonBackgroundDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackgroundDisplayer.swift; sourceTree = "<group>"; };
 		D21352BB1F7527F700B5375B /* Button+ImaginaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+ImaginaryTests.swift"; sourceTree = "<group>"; };
 		D21352C21F7540E400B5375B /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D21352E91F7541D300B5375B /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cache.framework; path = Carthage/Build/tvOS/Cache.framework; sourceTree = "<group>"; };
 		D21352EF1F75423700B5375B /* Imaginary_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Imaginary_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21352F31F75423700B5375B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D21353061F75487600B5375B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,7 +120,6 @@
 		D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		D5DF75911C403D8200BF1AB6 /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF759E1C403E1000BF1AB6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5DF75B11C403FBF00BF1AB6 /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cache.framework; path = Carthage/Build/iOS/Cache.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE8FBF61D1BFC8D00C5A212 /* Cache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21352EA1F7541D300B5375B /* Cache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21353021F7542C800B5375B /* Cache.framework in Frameworks */,
 				D21353011F75429B00B5375B /* Imaginary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D273453A1F7147BE00BF063D /* Cache.framework in Frameworks */,
 				D2E2E9851F7112CF001B4251 /* Imaginary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +157,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DF75B21C403FBF00BF1AB6 /* Cache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,23 +274,12 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
-		D5B274C41DB8B0A900992392 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D21352E91F7541D300B5375B /* Cache.framework */,
-				BDE8FBF51D1BFC8D00C5A212 /* Cache.framework */,
-				D5DF75B11C403FBF00BF1AB6 /* Cache.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D5DF75871C403D8200BF1AB6 = {
 			isa = PBXGroup;
 			children = (
 				BDE8FBCC1D1BFA4F00C5A212 /* Sources */,
 				D2E2E9811F7112CF001B4251 /* ImaginaryTests-iOS */,
 				D21352F01F75423700B5375B /* Imaginary_tvOSTests */,
-				D5B274C41DB8B0A900992392 /* Frameworks */,
 				D5DF759C1C403E1000BF1AB6 /* Imaginary */,
 				D5DF75921C403D8200BF1AB6 /* Products */,
 			);

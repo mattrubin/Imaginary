@@ -1,5 +1,4 @@
 import Foundation
-import Cache
 
 extension View {
   /// Set image with url
@@ -20,8 +19,7 @@ extension View {
     cancelImageFetch()
 
     self.imageFetcher = ImageFetcher(
-      downloader: option.downloaderMaker(),
-      storage: option.storageMaker()
+      downloader: option.downloaderMaker()
     )
 
     self.imageFetcher?.fetch(url: url, completion: { [weak self] result in
