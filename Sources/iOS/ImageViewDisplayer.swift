@@ -9,14 +9,6 @@ public class ImageViewDisplayer: ImageDisplayer {
     self.animationOption = animationOption
   }
 
-  public func display(placeholder: Image, onto view: View) {
-    guard let imageView = view as? ImageView else {
-      return
-    }
-
-    imageView.image = placeholder
-  }
-
   public func display(image: Image, onto view: View) {
     guard let imageView = view as? ImageView else {
       return

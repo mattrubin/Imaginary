@@ -5,16 +5,10 @@ extension View {
   ///
   /// - Parameters:
   ///   - url: The url to fetch
-  ///   - placeholder: Placeholder if any
-  ///   - option: Customise this specific fetching
   ///   - completion: Called after done
   public func setImage(url: URL,
-                       placeholder: Image? = nil,
-                       option: Option = Option(),
                        completion: Completion? = nil) {
-    if let placeholder = placeholder {
-      option.imageDisplayer.display(placeholder: placeholder, onto: self)
-    }
+    let option: Option = Option()
 
     cancelImageFetch()
 
