@@ -1,4 +1,21 @@
-import Foundation
+import UIKit
+
+/// Error
+public enum ImaginaryError: Error {
+  case invalidResponse
+  case invalidStatusCode
+  case invalidData
+  case invalidContentLength
+  case conversionError
+}
+
+/// Result for fetching
+public enum Result {
+  case value(UIImage)
+  case error(Error)
+}
+
+public typealias Completion = (Result) -> Void
 
 /// Fetch image for you so that you don't have to think.
 /// It can be fetched from storage or network.
