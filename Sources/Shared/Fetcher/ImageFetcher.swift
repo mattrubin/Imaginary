@@ -3,16 +3,10 @@ import Foundation
 /// Fetch image for you so that you don't have to think.
 /// It can be fetched from storage or network.
 public class ImageFetcher {
-  private let downloader: ImageDownloader
+  private let downloader = ImageDownloader()
 
   /// Initialize ImageFetcehr
-  ///
-  /// - Parameters:
-  ///   - downloader: Used to download images.
-  ///   - storage: Used to store downloaded images. Pass nil to ignore cache
-  public init(downloader: ImageDownloader) {
-    self.downloader = downloader
-  }
+  public init() {}
 
   /// Cancel operations
   public func cancel() {

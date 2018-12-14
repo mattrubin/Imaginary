@@ -11,9 +11,7 @@ extension UIImageView {
                        completion: Completion? = nil) {
     cancelImageFetch()
 
-    self.imageFetcher = ImageFetcher(
-      downloader: ImageDownloader()
-    )
+    self.imageFetcher = ImageFetcher()
 
     self.imageFetcher?.fetch(url: url, completion: { [weak self] result in
       guard let `self` = self else {
