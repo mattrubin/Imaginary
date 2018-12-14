@@ -31,17 +31,6 @@ public class ImageFetcher {
   // MARK: - Helper
 
   private func fetchFromNetwork(url: URL, completion: @escaping (Result) -> Void) {
-    download(url: url, completion: { result in
-      switch result {
-      case .value(let image):
-        completion(.value(image))
-      case .error(let error):
-        completion(.error(error))
-      }
-    })
-  }
-
-  private func download(url: URL, completion: @escaping (Result) -> Void) {
     active = true
 
     let request = URLRequest(url: url)
