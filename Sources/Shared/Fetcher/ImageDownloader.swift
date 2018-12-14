@@ -3,7 +3,6 @@ import Foundation
 /// Download image from url
 public class ImageDownloader {
   fileprivate let session: URLSession
-  fileprivate let modifyRequest: (URLRequest) -> (URLRequest)
 
   fileprivate var task: URLSessionDataTask?
   fileprivate var active = false
@@ -11,11 +10,9 @@ public class ImageDownloader {
   // MARK: - Initialization
 
   public init(
-    session: URLSession = URLSession.shared,
-    modifyRequest: @escaping (URLRequest) -> (URLRequest)) {
+    session: URLSession = URLSession.shared) {
 
     self.session = session
-    self.modifyRequest = modifyRequest
   }
 
   // MARK: - Operation
@@ -23,7 +20,7 @@ public class ImageDownloader {
   public func download(url: URL, completion: @escaping (Result) -> Void) {
     active = true
 
-    let request = modifyRequest(URLRequest(url: url))
+    let request = URLRequest(url: url)
     self.task = self.session.dataTask(with: request,
                                       completionHandler: { [weak self] data, response, error in
       guard let `self` = self, self.active else {

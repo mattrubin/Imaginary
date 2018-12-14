@@ -12,7 +12,7 @@ extension UIImageView {
     cancelImageFetch()
 
     self.imageFetcher = ImageFetcher(
-      downloader: ImageDownloader(modifyRequest: { $0 })
+      downloader: ImageDownloader()
     )
 
     self.imageFetcher?.fetch(url: url, completion: { [weak self] result in
