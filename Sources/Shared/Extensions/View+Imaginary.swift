@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 extension UIImageView {
@@ -7,8 +6,7 @@ extension UIImageView {
   /// - Parameters:
   ///   - url: The url to fetch
   ///   - completion: Called after done
-  public func setImage(url: URL,
-                       completion: Completion? = nil) {
+  public func setImage(url: URL, completion: Completion? = nil) {
     cancelImageFetch()
 
     self.imageFetcher = ImageFetcher()
@@ -18,8 +16,24 @@ extension UIImageView {
         return
       }
 
-      self.handle(url: url, result: result,
-                  completion: completion)
+      defer {
+        DispatchQueue.main.async {
+          completion?(result)
+        }
+      }
+
+      switch result {
+      case .value(let image):
+        DispatchQueue.main.async {
+          UIView.transition(with: self, duration: 0.25,
+                            options: [.transitionCrossDissolve, .allowUserInteraction],
+                            animations: {
+                              self.image = image
+          }, completion: nil)
+        }
+      case .error:
+          break
+      }
     })
   }
 
@@ -28,29 +42,6 @@ extension UIImageView {
     if let imageFetcher = imageFetcher {
       imageFetcher.cancel()
       self.imageFetcher = nil
-    }
-  }
-
-  private func handle(url: URL, result: Result,
-                      completion: Completion?) {
-
-    defer {
-      DispatchQueue.main.async {
-        completion?(result)
-      }
-    }
-
-    switch result {
-    case .value(let image):
-      DispatchQueue.main.async {
-        UIView.transition(with: self, duration: 0.25,
-                          options: [.transitionCrossDissolve, .allowUserInteraction],
-                          animations: {
-                            self.image = image
-        }, completion: nil)
-      }
-    case .error:
-        break
     }
   }
 

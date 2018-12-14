@@ -91,7 +91,6 @@ public class ImageFetcher {
       completion(.value(image))
     }
   }
-
 }
 
 fileprivate extension HTTPURLResponse {
