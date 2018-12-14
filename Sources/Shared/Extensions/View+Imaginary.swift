@@ -55,8 +55,8 @@ extension View {
       DispatchQueue.main.async {
         option.imageDisplayer.display(image: processedImage, onto: self)
       }
-    case .error(let error):
-      Configuration.trackError?(url, error)
+    case .error:
+        break
     }
   }
 

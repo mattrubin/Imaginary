@@ -59,7 +59,6 @@ public class ImageDownloader {
         return
       }
 
-      Configuration.trackBytesDownloaded[url] = data.count
       completion(.value(decodedImage))
     })
 

@@ -19,7 +19,6 @@
 		D2E2E9851F7112CF001B4251 /* Imaginary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF75911C403D8200BF1AB6 /* Imaginary.framework */; };
 		D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */; };
 		D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */; };
-		D2E8C81D1F7252C300D2B8EF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80E1F7252C300D2B8EF /* Configuration.swift */; };
 		D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */; };
 		D2E8C8211F7252C300D2B8EF /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8101F7252C300D2B8EF /* Option.swift */; };
 		D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8111F7252C300D2B8EF /* Result.swift */; };
@@ -52,7 +51,6 @@
 		D2E2E9841F7112CF001B4251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
-		D2E8C80E1F7252C300D2B8EF /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryError.swift; sourceTree = "<group>"; };
 		D2E8C8101F7252C300D2B8EF /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		D2E8C8111F7252C300D2B8EF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			children = (
 				D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */,
 				D2E8C8331F7257A800D2B8EF /* ImageProcessor.swift */,
-				D2E8C80E1F7252C300D2B8EF /* Configuration.swift */,
 				D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */,
 				D2E8C8101F7252C300D2B8EF /* Option.swift */,
 				D2E8C8111F7252C300D2B8EF /* Result.swift */,
@@ -338,7 +335,6 @@
 				D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */,
 				D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */,
 				D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */,
-				D2E8C81D1F7252C300D2B8EF /* Configuration.swift in Sources */,
 				D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */,
 				D273452B1F71448000BF063D /* Decompressor.swift in Sources */,
 				D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */,
