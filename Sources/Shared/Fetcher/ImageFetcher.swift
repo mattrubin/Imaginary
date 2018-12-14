@@ -81,7 +81,7 @@ public class ImageFetcher {
         return
       }
 
-      guard let decodedImage = Decompressor().decompress(data: data) else {
+      guard let decodedImage = UIImage(data: data) else {
         completion(.error(ImaginaryError.conversionError))
         return
       }
@@ -100,7 +100,7 @@ public class ImageFetcher {
         return
       }
 
-      guard let image = Decompressor().decompress(data: data) else {
+      guard let image = UIImage(data: data) else {
         completion(.error(ImaginaryError.conversionError))
         return
       }
