@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+extension UIImageView {
   /// Set image with url
   ///
   /// - Parameters:
@@ -44,20 +44,12 @@ extension UIView {
 
     switch result {
     case .value(let image):
-      let processedImage = image
       DispatchQueue.main.async {
-        func display(image: UIImage, onto view: UIView) {
-            guard let imageView = view as? UIImageView else {
-                return
-            }
-
-            UIView.transition(with: imageView, duration: 0.25,
-                              options: [.transitionCrossDissolve, .allowUserInteraction],
-                              animations: {
-                                imageView.image = image
-            }, completion: nil)
-        }
-        display(image: processedImage, onto: self)
+        UIView.transition(with: self, duration: 0.25,
+                          options: [.transitionCrossDissolve, .allowUserInteraction],
+                          animations: {
+                            self.image = image
+        }, completion: nil)
       }
     case .error:
         break
