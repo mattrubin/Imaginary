@@ -34,7 +34,6 @@ extension View {
 
   private func handle(url: URL, result: Result,
                       completion: Completion?) {
-    let option: Option = Option()
 
     defer {
       DispatchQueue.main.async {
@@ -46,7 +45,8 @@ extension View {
     case .value(let image):
       let processedImage = image
       DispatchQueue.main.async {
-        option.imageDisplayer.display(image: processedImage, onto: self)
+        let imageDisplayer = ImageViewDisplayer()
+        imageDisplayer.display(image: processedImage, onto: self)
       }
     case .error:
         break
