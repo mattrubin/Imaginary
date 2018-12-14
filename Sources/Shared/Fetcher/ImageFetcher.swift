@@ -3,14 +3,16 @@ import Foundation
 /// Fetch image for you so that you don't have to think.
 /// It can be fetched from storage or network.
 public class ImageFetcher {
-  private let downloader = ImageDownloader()
+  private var task: URLSessionDataTask?
+  private var active = false
 
   /// Initialize ImageFetcehr
   public init() {}
 
   /// Cancel operations
   public func cancel() {
-    downloader.cancel()
+    task?.cancel()
+    active = false
   }
 
   /// Fetch image from url.
@@ -29,7 +31,7 @@ public class ImageFetcher {
   // MARK: - Helper
 
   private func fetchFromNetwork(url: URL, completion: @escaping (Result) -> Void) {
-    downloader.download(url: url, completion: { result in
+    download(url: url, completion: { result in
       switch result {
       case .value(let image):
         completion(.value(image))
@@ -37,6 +39,51 @@ public class ImageFetcher {
         completion(.error(error))
       }
     })
+  }
+
+  private func download(url: URL, completion: @escaping (Result) -> Void) {
+    active = true
+
+    let request = URLRequest(url: url)
+    self.task = URLSession.shared.dataTask(with: request,
+                                      completionHandler: { [weak self] data, response, error in
+      guard let `self` = self, self.active else {
+        return
+      }
+
+      defer {
+        self.active = false
+      }
+
+      if let error = error {
+        completion(.error(error))
+        return
+      }
+
+      guard let httpResponse = response as? HTTPURLResponse else {
+        completion(.error(ImaginaryError.invalidResponse))
+        return
+      }
+
+      guard httpResponse.statusCode == 200 else {
+        completion(.error(ImaginaryError.invalidStatusCode))
+        return
+      }
+
+      guard let data = data, httpResponse.validateLength(data) else {
+        completion(.error(ImaginaryError.invalidContentLength))
+        return
+      }
+
+      guard let decodedImage = Decompressor().decompress(data: data) else {
+        completion(.error(ImaginaryError.conversionError))
+        return
+      }
+
+      completion(.value(decodedImage))
+    })
+
+    self.task?.resume()
   }
 
   private func fetchFromDisk(url: URL, completion: @escaping (Result) -> Void) {
@@ -56,4 +103,12 @@ public class ImageFetcher {
     }
   }
 
+}
+
+fileprivate extension HTTPURLResponse {
+  func validateLength(_ data: Data) -> Bool {
+    return expectedContentLength > -1
+      ? (Int64(data.count) >= expectedContentLength)
+      : true
+  }
 }
