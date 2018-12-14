@@ -9,25 +9,21 @@
 /* Begin PBXBuildFile section */
 		D21352B51F7523BF00B5375B /* View+Imaginary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B41F7523BF00B5375B /* View+Imaginary.swift */; };
 		D273452B1F71448000BF063D /* Decompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273451B1F71448000BF063D /* Decompressor.swift */; };
-		D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */; };
 		D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */; };
 		D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */; };
 		D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */; };
 		D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8111F7252C300D2B8EF /* Result.swift */; };
 		D2E8C8251F7252C300D2B8EF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8121F7252C300D2B8EF /* Types.swift */; };
-		D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D21352B41F7523BF00B5375B /* View+Imaginary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Imaginary.swift"; sourceTree = "<group>"; };
 		D273451B1F71448000BF063D /* Decompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decompressor.swift; sourceTree = "<group>"; };
-		D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDisplayer.swift; sourceTree = "<group>"; };
 		D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryError.swift; sourceTree = "<group>"; };
 		D2E8C8111F7252C300D2B8EF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D2E8C8121F7252C300D2B8EF /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
-		D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDisplayer.swift; sourceTree = "<group>"; };
 		D5DF75911C403D8200BF1AB6 /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF759E1C403E1000BF1AB6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				D273451B1F71448000BF063D /* Decompressor.swift */,
-				D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -91,7 +86,6 @@
 		D2E8C80D1F7252C300D2B8EF /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				D2E8C8321F7257A800D2B8EF /* ImageDisplayer.swift */,
 				D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */,
 				D2E8C8111F7252C300D2B8EF /* Result.swift */,
 				D2E8C8121F7252C300D2B8EF /* Types.swift */,
@@ -213,9 +207,7 @@
 			files = (
 				D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */,
 				D2E8C8251F7252C300D2B8EF /* Types.swift in Sources */,
-				D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */,
 				D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */,
-				D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */,
 				D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */,
 				D273452B1F71448000BF063D /* Decompressor.swift in Sources */,
 				D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */,

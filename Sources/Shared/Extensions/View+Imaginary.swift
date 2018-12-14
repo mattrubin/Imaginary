@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 extension View {
   /// Set image with url
@@ -45,8 +46,18 @@ extension View {
     case .value(let image):
       let processedImage = image
       DispatchQueue.main.async {
-        let imageDisplayer = ImageViewDisplayer()
-        imageDisplayer.display(image: processedImage, onto: self)
+        func display(image: Image, onto view: View) {
+            guard let imageView = view as? ImageView else {
+                return
+            }
+
+            UIView.transition(with: imageView, duration: 0.25,
+                              options: [.transitionCrossDissolve, .allowUserInteraction],
+                              animations: {
+                                imageView.image = image
+            }, completion: nil)
+        }
+        display(image: processedImage, onto: self)
       }
     case .error:
         break
