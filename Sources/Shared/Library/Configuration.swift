@@ -1,9 +1,4 @@
-
-#if os(iOS) || os(tvOS)
 import UIKit
-#elseif os(OSX)
-import AppKit
-#endif
 
 /// Configuration for all operations.
 public struct Configuration {
