@@ -8,21 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D21352B51F7523BF00B5375B /* View+Imaginary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B41F7523BF00B5375B /* View+Imaginary.swift */; };
-		D21352B81F75266200B5375B /* ButtonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B71F75266200B5375B /* ButtonDisplayer.swift */; };
-		D21352BA1F75266C00B5375B /* ButtonBackgroundDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352B91F75266C00B5375B /* ButtonBackgroundDisplayer.swift */; };
 		D21352BC1F7527F700B5375B /* Button+ImaginaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21352BB1F7527F700B5375B /* Button+ImaginaryTests.swift */; };
 		D273452B1F71448000BF063D /* Decompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273451B1F71448000BF063D /* Decompressor.swift */; };
 		D273453C1F7148C100BF063D /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273453B1F7148C100BF063D /* TestHelper.swift */; };
 		D27345411F71619800BF063D /* MultipleImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27345401F71619800BF063D /* MultipleImageFetcherTests.swift */; };
 		D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */; };
-		D2AFA1C91F725CE1001963ED /* TintImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1C81F725CE1001963ED /* TintImageProcessor.swift */; };
 		D2AFA1CB1F726DEF001963ED /* SimpleImageDisplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1CA1F726DEF001963ED /* SimpleImageDisplayerTests.swift */; };
 		D2AFA1CD1F726F15001963ED /* ImageView+ImaginaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA1CC1F726F15001963ED /* ImageView+ImaginaryTests.swift */; };
 		D2E2E9831F7112CF001B4251 /* ImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E2E9821F7112CF001B4251 /* ImageFetcherTests.swift */; };
 		D2E2E9851F7112CF001B4251 /* Imaginary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF75911C403D8200BF1AB6 /* Imaginary.framework */; };
 		D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */; };
 		D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */; };
-		D2E8C81B1F7252C300D2B8EF /* MultipleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80C1F7252C300D2B8EF /* MultipleImageFetcher.swift */; };
 		D2E8C81D1F7252C300D2B8EF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80E1F7252C300D2B8EF /* Configuration.swift */; };
 		D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */; };
 		D2E8C8211F7252C300D2B8EF /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8C8101F7252C300D2B8EF /* Option.swift */; };
@@ -44,14 +40,11 @@
 
 /* Begin PBXFileReference section */
 		D21352B41F7523BF00B5375B /* View+Imaginary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Imaginary.swift"; sourceTree = "<group>"; };
-		D21352B71F75266200B5375B /* ButtonDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisplayer.swift; sourceTree = "<group>"; };
-		D21352B91F75266C00B5375B /* ButtonBackgroundDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackgroundDisplayer.swift; sourceTree = "<group>"; };
 		D21352BB1F7527F700B5375B /* Button+ImaginaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+ImaginaryTests.swift"; sourceTree = "<group>"; };
 		D273451B1F71448000BF063D /* Decompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decompressor.swift; sourceTree = "<group>"; };
 		D273453B1F7148C100BF063D /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		D27345401F71619800BF063D /* MultipleImageFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleImageFetcherTests.swift; sourceTree = "<group>"; };
 		D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDisplayer.swift; sourceTree = "<group>"; };
-		D2AFA1C81F725CE1001963ED /* TintImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintImageProcessor.swift; sourceTree = "<group>"; };
 		D2AFA1CA1F726DEF001963ED /* SimpleImageDisplayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageDisplayerTests.swift; sourceTree = "<group>"; };
 		D2AFA1CC1F726F15001963ED /* ImageView+ImaginaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+ImaginaryTests.swift"; sourceTree = "<group>"; };
 		D2E2E9801F7112CF001B4251 /* ImaginaryTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImaginaryTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +52,6 @@
 		D2E2E9841F7112CF001B4251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
-		D2E8C80C1F7252C300D2B8EF /* MultipleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleImageFetcher.swift; sourceTree = "<group>"; };
 		D2E8C80E1F7252C300D2B8EF /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D2E8C80F1F7252C300D2B8EF /* ImaginaryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryError.swift; sourceTree = "<group>"; };
 		D2E8C8101F7252C300D2B8EF /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
@@ -104,9 +96,6 @@
 			children = (
 				D273451B1F71448000BF063D /* Decompressor.swift */,
 				D2AFA1C41F7259F4001963ED /* ImageViewDisplayer.swift */,
-				D2AFA1C81F725CE1001963ED /* TintImageProcessor.swift */,
-				D21352B71F75266200B5375B /* ButtonDisplayer.swift */,
-				D21352B91F75266C00B5375B /* ButtonBackgroundDisplayer.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -148,7 +137,6 @@
 			children = (
 				D2E8C80A1F7252C300D2B8EF /* ImageDownloader.swift */,
 				D2E8C80B1F7252C300D2B8EF /* ImageFetcher.swift */,
-				D2E8C80C1F7252C300D2B8EF /* MultipleImageFetcher.swift */,
 			);
 			path = Fetcher;
 			sourceTree = "<group>";
@@ -346,19 +334,15 @@
 				D2E8C8171F7252C300D2B8EF /* ImageDownloader.swift in Sources */,
 				D2E8C8211F7252C300D2B8EF /* Option.swift in Sources */,
 				D2E8C8251F7252C300D2B8EF /* Types.swift in Sources */,
-				D21352BA1F75266C00B5375B /* ButtonBackgroundDisplayer.swift in Sources */,
 				D2E8C8361F7257A800D2B8EF /* ImageProcessor.swift in Sources */,
 				D2E8C8341F7257A800D2B8EF /* ImageDisplayer.swift in Sources */,
-				D2E8C81B1F7252C300D2B8EF /* MultipleImageFetcher.swift in Sources */,
 				D2E8C8191F7252C300D2B8EF /* ImageFetcher.swift in Sources */,
-				D21352B81F75266200B5375B /* ButtonDisplayer.swift in Sources */,
 				D2AFA1C51F7259F4001963ED /* ImageViewDisplayer.swift in Sources */,
 				D2E8C81D1F7252C300D2B8EF /* Configuration.swift in Sources */,
 				D2E8C81F1F7252C300D2B8EF /* ImaginaryError.swift in Sources */,
 				D273452B1F71448000BF063D /* Decompressor.swift in Sources */,
 				D2E8C8231F7252C300D2B8EF /* Result.swift in Sources */,
 				D21352B51F7523BF00B5375B /* View+Imaginary.swift in Sources */,
-				D2AFA1C91F725CE1001963ED /* TintImageProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
