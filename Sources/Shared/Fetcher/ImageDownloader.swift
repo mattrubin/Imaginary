@@ -2,17 +2,12 @@ import Foundation
 
 /// Download image from url
 public class ImageDownloader {
-  fileprivate let session: URLSession
-
   fileprivate var task: URLSessionDataTask?
   fileprivate var active = false
 
   // MARK: - Initialization
 
-  public init(
-    session: URLSession = URLSession.shared) {
-
-    self.session = session
+  public init() {
   }
 
   // MARK: - Operation
@@ -21,7 +16,7 @@ public class ImageDownloader {
     active = true
 
     let request = URLRequest(url: url)
-    self.task = self.session.dataTask(with: request,
+    self.task = URLSession.shared.dataTask(with: request,
                                       completionHandler: { [weak self] data, response, error in
       guard let `self` = self, self.active else {
         return
