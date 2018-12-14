@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension View {
+extension UIView {
   /// Set image with url
   ///
   /// - Parameters:
@@ -46,8 +46,8 @@ extension View {
     case .value(let image):
       let processedImage = image
       DispatchQueue.main.async {
-        func display(image: Image, onto view: View) {
-            guard let imageView = view as? ImageView else {
+        func display(image: UIImage, onto view: UIView) {
+            guard let imageView = view as? UIImageView else {
                 return
             }
 

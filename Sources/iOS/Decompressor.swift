@@ -1,8 +1,8 @@
 import UIKit
 
 final class Decompressor {
-  func decompress(data: Data) -> Image? {
-    guard let image = Image(data: data) else {
+  func decompress(data: Data) -> UIImage? {
+    guard let image = UIImage(data: data) else {
       return nil
     }
 
@@ -34,6 +34,6 @@ final class Decompressor {
       return image
     }
 
-    return Image(cgImage: imageRefWithoutAlpha)
+    return UIImage(cgImage: imageRefWithoutAlpha)
   }
 }

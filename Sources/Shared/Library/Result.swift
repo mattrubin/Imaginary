@@ -1,7 +1,7 @@
-import Foundation
+import UIKit
 
 /// Result for fetching
 public enum Result {
-  case value(Image)
+  case value(UIImage)
   case error(Error)
 }
